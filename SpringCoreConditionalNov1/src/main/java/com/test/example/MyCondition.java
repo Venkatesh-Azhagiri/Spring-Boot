@@ -1,0 +1,16 @@
+package com.test.example;
+
+import org.springframework.context.annotation.Condition;
+import org.springframework.context.annotation.ConditionContext;
+import org.springframework.core.type.AnnotatedTypeMetadata;
+
+public class MyCondition implements Condition {
+
+	@Override
+	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+		//Modify to true or false to test the behaviour
+		//return false;
+		return true;
+	}
+
+}
